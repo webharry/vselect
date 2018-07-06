@@ -13,4 +13,27 @@ Vue.use(vSelect)
 ```
 
 ### 在vue文件中使用：
-<v-select></v-selecg>
+```html
+<v-select v-model="selected" :option="options" :placement="placement"></v-select>
+<script>
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      index: 1,
+      options: [{
+          value:1,
+          label:'option1'
+      },{
+          value:2,
+          label:'option2'
+      }],
+      selected:{
+          value:1,
+          label:'option1'
+      },
+      placement:'down'
+    }
+}
+</script>
+```

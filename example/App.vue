@@ -4,6 +4,7 @@
     </div>
 </template>
 <script>
+// import vSelect from '../dist/vselect'
 export default {
     name: 'App',
     data() {
@@ -22,6 +23,9 @@ export default {
             placement:'down'
         }
     }
+    // components: {
+    //     vSelect
+    // }
 }
 </script>
 <style lang="less" scoped>

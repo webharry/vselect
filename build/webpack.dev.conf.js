@@ -6,7 +6,7 @@ const base = require('./webpack.base.conf.js');
 // const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = merge(base, {
-    entry: './src/main.js',
+    entry: './example/index.js',
     mode:'development',
     devtool: 'inline-source-map',
     devServer: { //搭建开发环境
@@ -19,7 +19,7 @@ module.exports = merge(base, {
     plugins:[
         new HtmlWebpackPlugin({//在打包后的文件夹里生成html模板
             filename: 'index.html',
-            template: 'index.html',
+            template: 'example/index.html',
             inject: true
         }),
         new webpack.HotModuleReplacementPlugin(),//模块热替换

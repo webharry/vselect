@@ -5,3 +5,7 @@ export default {
         Vue.component(vSelect.name, vSelect)
     }
 }
+
+export {
+    vSelect
+}

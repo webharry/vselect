@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import vselect from './components/vselect'
+import { vSelect } from '../src/index'
 
 Vue.config.productionTip = false
 
-Vue.use(vselect)
+Vue.use(vSelect)
 
 new Vue({
     el: "#app",

@@ -7,7 +7,6 @@ module.exports = {
     output: {//打包出口文件
         path: path.resolve(__dirname, "../dist"),//绝对路径
         filename: "[name].js",
-        publicPath: '/'
     },
     resolve: {
         extensions: ['*', '.js', '.vue'],//解析扩展，使用户在import时不用加文件后缀名

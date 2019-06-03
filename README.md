@@ -1,18 +1,24 @@
 
-## 组件功能介绍：自定义的下拉款组件，依赖于vue封装。
-## 使用：
+## vselect
+An vue select components
+
+## Demo
+[Live Demo](https://webharry.github.io/vselect/)
+
+## Installation：
 ```shell
 npm install --save-dev vselect-component
 ```
 
-### 在项目的main.js文件中引入：
+## How to use
+### 1、To include this project you need to require the module by using CommonJS syntax or ES6 Modules Syntax (recommended).For example，in main.js file:
 ```js
 import vSelect from 'vselect-component'
 
 Vue.use(vSelect)
 ```
 
-### 在vue文件中使用：
+### 2、In the .vue file to use：
 ```html
 <v-select v-model="selected" :option="options" :placement="placement"></v-select>
 <script>

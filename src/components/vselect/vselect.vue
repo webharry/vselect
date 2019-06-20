@@ -107,7 +107,8 @@ export default {
   padding: 0;
 }
 .active {
-  background-color: #00bcd4db;
+  background: #f3f3f3;
+  color: #2d8cf0;
 }
 .select {
   position: relative;
@@ -128,7 +129,8 @@ input {
     border:1px solid rgba(60, 60, 60, .26);
     border-radius: 4px;
     outline: none;
-    background-color: #ccc;
+    background-color: #fff;
+    color: #515a6e;
 }
 .input-control::after {
     content: "";
@@ -142,34 +144,43 @@ input {
 .down.input-control::after {
       border-right: 5px solid transparent;
       border-left: 5px solid transparent;
-      border-top: 8px solid #161515;
+      border-top: 8px solid #808695;
 }
 .up.input-control::after {
       border-right: 5px solid transparent;
       border-left: 5px solid transparent;
-      border-bottom: 8px solid #161515;
+      border-bottom: 8px solid #808695;
 }
 .dropMenu {
-    width: 100%;
+    min-width: 200px;
+    max-height: 200px;
+    margin: 5px 0;
+    padding: 5px 0;
+    box-sizing: border-box;
     position: absolute;
-    top: 45px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(230, 214, 214);
+    top:45px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+    z-index: 20;
 }
-  .dropMenu ul {
+.dropMenu ul {
     list-style: none;
-    border: 1px solid #00bcd4;
     overflow: auto;
-  }
-  .dropMenu li {
+}
+.dropMenu li {
     cursor: pointer;
     height:20px;
     line-height: 20px;
     font-size: 14px;
     padding: 5px 10px;
-  }
+    color: #515a6e;
+    white-space: nowrap;
+    transition: background .2s ease-in-out;
+}
+.dropMenu li:hover {
+    background: #f3f3f3;
+}
 </style>
 
 

@@ -1,11 +1,14 @@
 <template>
     <div>
         <vselect :option="options" v-model="selected" :placement="placement"></vselect>
+        <v-checkbox :option="options" v-model="selected" :placement="placement"></v-checkbox>
     </div>
 </template>
 <script>
+import vCheckbox from '../src/components/checkbox/vCheckbox.vue'
 // import vSelect from '../dist/vselect'
 export default {
+  components: { vCheckbox },
     name: 'App',
     data() {
         return {

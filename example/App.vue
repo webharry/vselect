@@ -15,6 +15,9 @@ export default {
             },{
                 value:2,
                 label:'option2'
+            },{
+                value:3,
+                label:'option3'
             }],
             selected:{
                 value:1,

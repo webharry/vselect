@@ -25,6 +25,18 @@ export default {
             },{
                 value:2,
                 label:'option2'
+            },{
+                value:3,
+                label:'option3'
+            },{
+                value:4,
+                label:'option4'
+            },{
+                value:5,
+                label:'option5'
+            },{
+                value:6,
+                label:'option6'
             }],
             selected:{
                 value:1,

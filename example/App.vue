@@ -12,13 +12,6 @@ export default {
     name: 'App',
     data() {
         return {
-            test: [{
-                value:1,
-                label:'option1'
-            },{
-                value:2,
-                label:'option2'
-            }],
             options: [{
                 value:1,
                 label:'option1'

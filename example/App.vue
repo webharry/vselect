@@ -23,7 +23,7 @@ export default {
                 label:'option3'
             },{
                 value:4,
-                label:'option3'
+                label:'option4'
             }],
             selected:{
                 value:1,
